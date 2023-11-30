@@ -8,4 +8,6 @@
 4. npx expo prebuild
 5. npx expo run:ios
 
-![share extension doesnt appear](./screenshot.png)
+![share extension doesnt appear](./screenshot.jpeg)
+
+![replay](./replay.gif)
