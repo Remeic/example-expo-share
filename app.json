@@ -1,10 +1,9 @@
 {
   "expo": {
-    "name": "tooread",
-    "slug": "tooread",
+    "name": "example-expo-share",
+    "slug": "example-expo-share",
     "version": "1.0.0",
-
-    "scheme": "tooread",
+    "scheme": "example-expo-share",
     "web": {
       "bundler": "metro",
       "output": "static",
@@ -14,7 +13,6 @@
     "experiments": {
       "typedRoutes": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -25,13 +23,18 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.test.example-expo-share",
+      "entitlements": {
+        "com.apple.security.application-groups": ["group.com.test.example-expo-share"]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.test.example-expo-share"
     }
   }
 }
